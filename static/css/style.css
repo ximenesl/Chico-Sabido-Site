@@ -207,7 +207,7 @@ main{
 /* BANNER */
 
 #banner {
-    background-image: url('/static/img/BannerSite1.png');
+    background-image: url('/static/imgs/BannerSite1.png');
     height: 90vh;
     width: 100vw;
     background-position: center;
