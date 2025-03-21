@@ -14,7 +14,6 @@
 
 .section{
     padding: 4.5rem 0 2rem;
-    /* background-color: rgb(45, 45, 124); */
     color: #fff;
 }
 
@@ -28,7 +27,6 @@
 }
 
 body{
-    /* background-color: rgb(45, 45, 124); */
     background: linear-gradient(to bottom,  #0F0C59 ,#3620DE, #2C1EBE, #1A3C7D, #154360);
     color: #fff;
 }
@@ -230,7 +228,7 @@ main{
     position: relative;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     z-index: 2;
 }
@@ -259,6 +257,16 @@ main{
     opacity: 0.7;
 }
 
+
+#chico{
+    position: absolute;
+    width: 350px;
+    height: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* COMO FUNCIONA E ONDE TÁ? */
 
 .imagem{
@@ -270,6 +278,9 @@ main{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+.how-where-container p{
+    font-size: 1.3rem;
 }
 
 .how-where-container h3{
@@ -389,8 +400,8 @@ main{
 }
 
 .worker-header #filter{
-    padding: 3px;
-    border-radius: 5px;
+    padding: 6px;
+    border-radius: 10px;
     font-weight: bold;
 }
 
@@ -478,7 +489,7 @@ main{
 .tech-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     margin-right: 15px;
     margin-top: 15px;
 }
@@ -564,6 +575,10 @@ footer {
 
 @media(max-width: 767px){
 
+    .how-where-container p{
+        font-size: 1rem;
+    }
+
     #banner {
         height: 50vh;
     }
@@ -577,6 +592,10 @@ footer {
     }
     .banner-container img{
         height: 400px;
+    }
+
+    #chico{
+        width: 200px;
     }
 
     .how-where-container{
@@ -623,5 +642,9 @@ footer {
 
     .banner-container img{
         height: 300px;
+    }
+
+    #chico{
+        width: 120px;
     }
 }

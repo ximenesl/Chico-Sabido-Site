@@ -9,7 +9,7 @@ const workers = [
     {
         name: 'Allan Almeida',
         role: 'Front-end',
-        linkedin: 'https://www.linkedin.com/in/arthurgabrielsilva/',
+        linkedin: 'https://www.linkedin.com/in/allanvitormarques/',
         image: '/static/imgs/workerAllan.jpg',
         github: 'https://github.com/AllanVitorM'
     },
@@ -17,21 +17,21 @@ const workers = [
         name: 'Arnott Caiado',
         role: 'Mentor',
         linkedin: 'https://www.linkedin.com/in/arnottcaiado?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
-        image: '/static/imgs/workerArnott.jpg',
+        image: '/static/imgs/workerArnott.JPG',
         github: 'https://github.com/arnottrcaiado'
     },
     {
         name: 'Arthur Silva',
         role: 'Front-end',
         linkedin: 'https://www.linkedin.com/in/arthurgabrielsilva/',
-        image: '/static/imgs/workerArthurg.jpg',
+        image: '/static/imgs/workerArthurg.JPG',
         github: 'https://github.com/arthur-Gsilva'
     },
     {
         name: 'Arthur Silveira',
         role: 'Design',
         linkedin: 'https://www.linkedin.com/in/arthur-silveira-4058542a1',
-        image: '/static/imgs/workerArthurs.jpg',
+        image: '/static/imgs/workerArthurs.jpeg',
         github: 'https://github.com/IsArthurSilveira'
     },
     {
@@ -39,20 +39,20 @@ const workers = [
         role: 'Mentor',
         linkedin: 'https://www.linkedin.com/in/filipescmelo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
         image: '/static/imgs/workerFilipe.png',
-        github: 'https://github.com/Vanessa-Matias'
+        github: 'https://github.com/fisocame'
     },
     {
         name: 'Lucas Leonides',
         role: 'Maker',
         linkedin: 'https://www.linkedin.com/in/lucas-leonides-555846299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-        image: '/static/imgs/workerLucasl.jpg',
+        image: '/static/imgs/workerLucasl.JPG',
         github: 'https://github.com/Lucas-Leonides'
     },
     {
         name: 'Lucas Ximenes',
         role: 'Front-end',
         linkedin: 'https://www.linkedin.com/in/lucas-ximenes/',
-        image: '/static/imgs/workerLucasx.jpg',
+        image: '/static/imgs/workerLucasx.JPG',
         github: 'https://github.com/ximenesl'
     },
     {
@@ -66,7 +66,7 @@ const workers = [
         name: 'Luiz Santos',
         role: 'Maker',
         linkedin: 'https://www.linkedin.com/in/luizfmoraessantos?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-        image: '/static/imgs/workerLuiz.jpg',
+        image: '/static/imgs/workerLuiz.JPG',
         github: 'https://github.com/LuizFelipeMoraesSantos'
     },
     {
@@ -80,42 +80,42 @@ const workers = [
         name: 'Mateus Assis',
         role: 'Back-end',
         linkedin: 'http://www.linkedin.com/in/mateus-henrique-assis',
-        image: '/static/imgs/workerMateus.jpg',
+        image: '/static/imgs/workerMateus.jpeg',
         github: 'https://github.com/MatHenriqueAssis'
     },
     {
         name: 'Pedro Lima',
         role: 'Back-end',
         linkedin: 'http://www.linkedin.com/in/pedrolcl1122',
-        image: '/static/imgs/workerPedrol.jpg',
+        image: '/static/imgs/workerPedrol.JPG',
         github: 'https://github.com/pedroLuizLima'
     },
     {
         name: 'Pedro Oliveira',
         role: 'Maker',
         linkedin: 'http://www.linkedin.com/in/pedro-vitor-a036ba27b',
-        image: '/static/imgs/workerPedroo.jpg',
+        image: '/static/imgs/workerPedroo.JPG',
         github: 'https://github.com/PV-Lopes'
     },
     {
         name: 'Rayra Silva',
         role: 'Front-end',
         linkedin: 'https://www.linkedin.com/in/rayra-lima?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-        image: '/static/imgs/workerRayra.jpg',
+        image: '/static/imgs/workerRayra.JPG',
         github: 'https://github.com/Rayralima'
     },
     {
         name: 'Ruth Xavier',
         role: 'Design',
         linkedin: 'https://www.linkedin.com/in/ruthxavier/',
-        image: '/static/imgs/workerRuth.jpg',
+        image: '/static/imgs/workerRuth.JPG',
         github: 'https://github.com/xavierruth'
     },
     {
         name: 'Samantha Pimentel',
         role: 'Mentor',
         linkedin: 'https://www.linkedin.com/in/samantha-pimentel-54207292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
-        image: '/static/imgs/workerSamantha.jpg',
+        image: '/static/imgs/workerSamantha.JPG',
         github: 'https://github.com/PimentelSamantha'
     },
     {
