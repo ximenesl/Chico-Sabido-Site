@@ -83,7 +83,8 @@ const sr = ScrollReveal({
 
 sr.reveal('.img-banner, .how-it-item', {origin: 'left'})
 sr.reveal('.banner-title, .where-it-item', {origin: 'right'})
-sr.reveal('.section3-items, .workers-items, .techs-items, .footer-content', { interval: 100 })
+sr.reveal('.section3-items, .workers-items, .techs-items, .footer-content, .btn-saiba-mais', { interval: 100 })
+sr.reveal('#chico', {origin: 'bottom'})
 
 
 // SWIPPER
@@ -114,7 +115,6 @@ const getImages = async (num) => {
 
 const renderImageChico = async () => {
     const images = await getImages(5);
-    console.log(images);
 
     const container = document.querySelector('.chico-vision');
     container.innerHTML = '';
@@ -127,12 +127,12 @@ const renderImageChico = async () => {
         `;
     });
 
-    // ⚠️ Agora inicializamos o Swiper APÓS carregar as imagens
+
     setTimeout(() => {
         const swiper = new Swiper('.swiper', {
             direction: 'horizontal',
             loop: true,
-            loopedSlides: images.length >= 3 ? 3 : images.length, // Se não tiver 3 imagens, reduz
+            loopedSlides: images.length >= 3 ? 3 : images.length, 
             autoplay: {
                 delay: 3000,
             },
