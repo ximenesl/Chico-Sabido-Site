@@ -727,6 +727,10 @@ footer {
 
 @media(max-width: 767px){
 
+    .how-it-item .info{
+        width: 100%;
+     }
+
     .banner-container h1{
         margin-top: 1rem;
     }
@@ -793,6 +797,11 @@ footer {
     }
 }
 @media(max-width: 600px){
+
+    h3{
+        font-size: 3rem;
+    }
+
     .workers-items{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -805,6 +814,14 @@ footer {
         
         grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
+    }
+
+    .tech-item i{
+        font-size: 2rem;
+    }
+
+    .tech-item .paragrafo{
+        font-size: 1rem !important;
     }
 
     .where-it-item img{
@@ -843,6 +860,11 @@ footer {
 
     #chico{
         width: 120px;
+    }
+
+    .techs-items{
+        
+        grid-template-columns: repeat(2, 1fr);
     }
 
     
