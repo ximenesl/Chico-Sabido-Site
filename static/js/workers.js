@@ -45,14 +45,14 @@ const workers = [
         name: 'Lucas Leonides',
         role: 'Maker',
         linkedin: 'https://www.linkedin.com/in/lucas-leonides-555846299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-        image: '/static/imgs/img/workerLucasl.JPG',
+        image: '/static/imgs/workerLucasl.JPG',
         github: 'https://github.com/Lucas-Leonides'
     },
     {
         name: 'Lucas Ximenes',
         role: 'Front-end',
         linkedin: 'https://www.linkedin.com/in/lucas-ximenes/',
-        image: '/static/imgs/img/workerLucasx.JPG',
+        image: '/static/imgs/workerLucasx.JPG',
         github: 'https://github.com/ximenesl'
     },
     {
