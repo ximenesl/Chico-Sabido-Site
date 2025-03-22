@@ -35,12 +35,19 @@ window.addEventListener('scroll', () => {
 const workersContainer = document.querySelector(".workers-items");
 const filterSelect = document.getElementById("filter");
 
+// Definir o valor padrão do <select> como "Mentor"
+filterSelect.value = "all";
+
 // Função para renderizar os workers filtrados
 function renderWorkers(filter = "all") {
     workersContainer.innerHTML = ""; // Limpa os trabalhadores atuais
 
     workers
-        .filter(worker => filter === "all" || worker.role === filter) // Filtra os workers
+        .filter(worker => 
+            filter === "all" || 
+            worker.role === filter || 
+            (filter === "Mentor" && worker.role === "Mentora") // Permite "Mentor" e "Mentora"
+        )
         .forEach(worker => {
             const workerDiv = document.createElement("div");
             workerDiv.classList.add("worker-item");
@@ -68,8 +75,8 @@ filterSelect.addEventListener("change", (event) => {
     renderWorkers(event.target.value);
 });
 
-// Renderiza todos os trabalhadores inicialmente
-renderWorkers();
+// Renderiza apenas os trabalhadores "Mentor" no carregamento inicial
+renderWorkers("all");
 
 
 // SCROLL REVEAL
