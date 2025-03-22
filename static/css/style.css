@@ -1,8 +1,22 @@
+@font-face {
+    font-family: 'pixel';
+    src: url('/static/fonts/pixel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'videotype';
+    src: url('/static/fonts/videotype.ttf') format('truetype'),
+        url('/static/fonts/videotype.woff') format('woff'),
+        url('/static/fonts/videotype.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'pixel', sans-serif;
 }
 
 
@@ -45,7 +59,7 @@ ul{
 }
 
 img{
-    max-width: 100%;
+    max-width: 150%;
     height: auto;
 }
 
@@ -77,7 +91,7 @@ main{
     align-items: center;
     gap: 8px;
     color: #fff;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 @media(max-width: 767px){
@@ -114,11 +128,18 @@ main{
 }
 .nav-list li a{
     color: #fff;
+    font-size: 1.6rem;
+    padding: .8rem;
+    border-radius: 20px;
+}
+.nav-list li a:hover{
+    background-color: #3620DE;
+    
 }
 
 .nav-button{
-    border: 2px solid #fff;
-    padding: 14px 20px;
+    border: 20px solid #fff;
+    padding: 1400px 2000px ;
     border-radius: 30px;
     
 }
@@ -228,26 +249,29 @@ main{
     position: relative;
     height: 100%;
     display: flex;
-    align-items: end;
+    align-items: start;
     justify-content: center;
     z-index: 2;
 }
 .banner-container h1{
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
+    margin-top: 2.25rem;
 }
+#banner h2 {
+    text-align: center;      
+    font-size: 4rem;        
+    font-weight: bold;      
+    color: #fff;
+    margin-top: 50px;   
+}     
 
-.historia-item{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 
 .btn-saiba-mais{
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
-.btn-saiba-mais a{
+/* .btn-saiba-mais a{
     padding: 10px;
     border-radius: 5px;
     background-color: #3620DE;
@@ -255,6 +279,19 @@ main{
 }
 .btn-saiba-mais a:hover{
     opacity: 0.7;
+} */
+
+.btn-saiba-mais a{
+    padding: 1rem;
+    color: #fff;
+    border: 0;
+    border-radius: 100px;
+    cursor: pointer;
+    background: linear-gradient(to bottom,  #D00076 ,#FF7EC7);
+    transition: .3s;
+}
+.btn-saiba-mais a:hover{
+    background: linear-gradient(to top,  #D00076 ,#FF7EC7);
 }
 
 
@@ -262,7 +299,7 @@ main{
     position: absolute;
     width: 350px;
     height: auto;
-    bottom: 0;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -277,31 +314,109 @@ main{
 .how-where-container{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 6rem;
 }
 .how-where-container p{
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 
 .how-where-container h3{
-    font-size: 2rem;
-    margin-bottom: 4px;
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+h3{
+  font-size: 4rem;
+margin-bottom: 40px;
+}
+.paragrafo{
+    font-family: 'videotype', sans-serif;
+    font-size: 1.7rem;
 }
 
 .how-it-item{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    justify-content: space-between;
+}
+
+.how-it-item .info{
+   width: 70%;
+}
+
+.how-it-item .imagem{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.how-it-item .imagem img{
+    width: auto;
+    height: 550px;
 }
 
 .where-it-item{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 7rem;
     align-items: center;
 }
+
+.historia-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.historia-item h3{
+    margin-bottom: 15px;
+}
+
+
+/* STEPS */
+
+.step-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.step {
+    background-color: #281C86;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+
+.step-info{
+    font-size: 1.3rem;
+}
+
+.step-info h3{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.step img{
+    height: auto;
+    width: 100%;
+}
+
+.step:hover{
+    background-color: #FF7EC7;
+}
+
+
+.step-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.step-descripition {
+    font-size: 1rem;
+}            
+
+
 
 /* SWIPPER */
 
@@ -352,17 +467,25 @@ main{
 }
 
 #all-images{
-    background-color: #1A3C7D;
     padding: 1rem;
     color: #fff;
     border: 0;
-    border-radius: 10px;
+    border-radius: 100px;
     cursor: pointer;
-    background: linear-gradient(to bottom,  #3620DE, #2C1EBE ,#FF7EC7);
+    background: linear-gradient(to bottom,  #D00076 ,#FF7EC7);
     transition: .3s;
 }
 #all-images:hover{
-    background: linear-gradient(to top,  #3620DE, #2C1EBE ,#FF7EC7);
+    background: linear-gradient(to top,  #D00076 ,#FF7EC7);
+}
+
+/* Video */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 
 
@@ -389,14 +512,16 @@ main{
 
 /* WORKERS */
 
-.workers-container h2{
-    margin-bottom: 1rem;
-}
-
 .worker-header{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1rem;
     align-items: center;
+}
+
+.worker-header .paragrafo{
+    text-align: left;
+    
 }
 
 .worker-header #filter{
@@ -416,7 +541,6 @@ main{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding-top: 1.3rem;
     padding-bottom: 5px;
@@ -442,6 +566,15 @@ main{
 .worker-item .worker-social i{
     font-size: 2rem;
     cursor: pointer;
+    color: #FF7EC7;
+}
+.worker-item h4{
+    font-size: 1.4rem;
+    margin: 0;
+}
+.worker-item h5{
+    font-size: 1.2rem;
+    margin: 0;
 }
 
 #filter{
@@ -449,10 +582,9 @@ main{
     border: 1px solid #3620DE;
     color: #2C1EBE;
     cursor: pointer;
-}
-
-#filter option{
-    cursor: pointer;
+    width: 150px;
+    font-size: 1rem;
+    height: 35px;
 }
 
 /* SLIDER */
@@ -487,6 +619,10 @@ main{
     justify-items: center;
 }
 
+.techs-items h5{
+    font-size: 1.4rem;
+}
+
 .tech-item{
     display: flex;
     flex-direction: column;
@@ -503,6 +639,7 @@ main{
     align-items: center;
     margin-right: 15px;
     margin-top: 15px;
+    gap: 1rem;
 }
 
 .tech-links {
@@ -582,9 +719,21 @@ footer {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
     }
+
+    .how-it-item{
+        gap: 2rem;
+    }
 }
 
 @media(max-width: 767px){
+
+    .banner-container h1{
+        margin-top: 1rem;
+    }
+
+    .step-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .how-where-container p{
         font-size: 1rem;
@@ -594,9 +743,7 @@ footer {
         height: 50vh;
     }
     
-    .banner-container{
-        flex-direction: column-reverse;
-    }
+    
 
     .banner-container h1{
         font-size: 2.3rem;
@@ -618,9 +765,31 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+    .how-it-item .imagem{
+        justify-content: center;
+    }
+
+    .where-it-item img{
+        width: 350px;
+        height: auto;
+    }
+
+    .slide-container{
+        text-align: center;
+    }
 
     .imagem{
         max-width: 300px;
+    }
+
+    .worker-header{
+        flex-direction: column;
+    }
+
+    .techs-container h3,
+    .worker-header-info,
+    .worker-header-info p{
+        text-align: center !important;
     }
 }
 @media(max-width: 600px){
@@ -637,8 +806,25 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
     }
+
+    .where-it-item img{
+        width: 200px;
+        height: auto;
+    }
+
+    .how-it-item .imagem img{
+        height: 300px;
+    }
+
+    .step-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 @media(max-width: 440px){
+
+    .banner-container h1{
+        font-size: 1.2rem;
+    }
 
     #banner {
         height: 30vh;
@@ -658,4 +844,22 @@ footer {
     #chico{
         width: 120px;
     }
+
+    
+}
+#how-to-play {
+    text-align: center;
+    padding: 50px 0 1px;
+    width: 100%;
+}
+
+#how-to-play .container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
