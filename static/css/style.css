@@ -613,10 +613,12 @@ margin-bottom: 40px;
 }
 
 
-.techs-items{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
+.techs-items {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    gap: 6rem;
 }
 
 .techs-items h5{
