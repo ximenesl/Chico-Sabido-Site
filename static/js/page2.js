@@ -22,6 +22,5 @@ const renderImages = async (containerId, url) => {
     ).join("");
 };
 
-renderImages("recnplay", "https://visao.pythonanywhere.com/latest_image");
 renderImages("startupday", "https://visao.pythonanywhere.com/imagens/all");
 renderImages("transforma", "https://visao.pythonanywhere.com/imagenstransforma/all");
