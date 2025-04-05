@@ -370,6 +370,38 @@ margin-bottom: 40px;
     margin-bottom: 15px;
 }
 
+/* EVENTS */
+.events-area {
+    padding: 40px 0;
+  }
+  
+  .events-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .events-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  .event-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .event-link:hover {
+    background-color: #005dc1;
+  }
 
 /* STEPS */
 
