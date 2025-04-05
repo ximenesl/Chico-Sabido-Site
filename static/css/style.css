@@ -136,7 +136,7 @@ main{
     border-radius: 20px;
 }
 .nav-list li a:hover{
-    background-image: url('/static/imgs/IMG_6458.PNG');
+    background-color: #217623;
     
 }
 
@@ -260,7 +260,7 @@ main{
     text-align: center;
     font-size: 4rem;
     margin-top: 1.9rem;
-    color: #e2543e;
+    color: #217623;
     text-shadow: 3px 3px 5px #262223;
 }
 #banner h2 {
@@ -940,7 +940,7 @@ footer {
 .link-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #D33245;
+    background-color: #217623;
     color: #fff;
     text-decoration: none;
     border-radius: 100px;
@@ -953,5 +953,5 @@ footer {
 }
 
 .link-button:hover {
-    background-color: #007aff; /* Cor de fundo ao passar o mouse */
+    background-color: #496B1D;
 }
