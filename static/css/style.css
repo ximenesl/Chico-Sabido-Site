@@ -376,6 +376,16 @@ margin-bottom: 40px;
 }
 
 /* EVENTS */
+.events-area {
+    padding: 40px 0;
+  }
+  
+  .events-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
 .events-links-wrapper {
     display: flex;
     justify-content: center;
