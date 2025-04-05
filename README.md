@@ -4,7 +4,7 @@
 
 <h3>Sobre o Projeto</h3>
 
-O Chico Sabido Site é um projeto web desenvolvido para proporcionar uma experiência intuitiva e impactante para seus visitantes. O site foi construído com foco em passar informações sobre o Jogo Chico Sabido e a sua importância no STARTUP DAY 2025.
+O Chico Sabido Site é um projeto web desenvolvido para proporcionar uma experiência intuitiva e impactante para seus visitantes. O site foi construído com foco em passar informações sobre o Jogo Chico Sabido e a sua importância nos eventos.
 
 <h3>Tecnologias Utilizadas</h3>
 
