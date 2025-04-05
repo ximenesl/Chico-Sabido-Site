@@ -41,7 +41,7 @@
 }
 
 body{
-    background: linear-gradient(to bottom,  #0F0C59 ,#3620DE, #2C1EBE, #1A3C7D, #154360);
+    background: #252122;
     color: #fff;
 }
 
@@ -72,7 +72,7 @@ main{
     height: 60px;
     width: 100%;
     z-index: 999;
-    background-color: #FF7EC7;
+    background-color: #496B1D;
 }
 
 .nav{
@@ -112,7 +112,7 @@ main{
         top: 0;
         right: -100%;
         bottom: 0;
-        background-color: #FF7EC7;
+        background-color: #496B1D;
         padding-bottom: 4rem;
         transition: .5s;
         border-left: 1px solid black;
@@ -133,7 +133,7 @@ main{
     border-radius: 20px;
 }
 .nav-list li a:hover{
-    background-color: #3620DE;
+    background-color: #217623;
     
 }
 
@@ -186,7 +186,7 @@ main{
 /* BACKGROUND HEADER */
 
 .background-header{
-    background-color: #FF7EC7;
+    background-color: #496B1D;
 }
 
 
@@ -287,11 +287,11 @@ main{
     border: 0;
     border-radius: 100px;
     cursor: pointer;
-    background: linear-gradient(to bottom,  #D00076 ,#FF7EC7);
+    background: #217623;
     transition: .3s;
 }
 .btn-saiba-mais a:hover{
-    background: linear-gradient(to top,  #D00076 ,#FF7EC7);
+    background: #217623;
 }
 
 
@@ -386,17 +386,6 @@ margin-bottom: 40px;
     flex-direction: column;
     gap: 12px;
     margin-top: 20px;
-  }
-  
-  .event-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0070f3;
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s;
   }
   
   .event-link:hover {
