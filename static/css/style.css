@@ -378,28 +378,28 @@ margin-bottom: 40px;
 /* EVENTS */
 .events-links-wrapper {
     display: flex;
+    justify-content: center;
+}
+
+.btn-links {
+    display: flex;
     flex-direction: column;
     align-items: center;
-  }
-.events-area {
-    padding: 40px 0;
-  }
-  
-  .events-container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .btn-links a{
+    gap: 12px; /* espaçamento entre os botões */
+}
+
+.btn-links a {
     padding: 1rem;
-    flex-direction: column;
     color: #fff;
     border: 0;
     border-radius: 100px;
     cursor: pointer;
     background-color: #217623;
-    transition: .3s;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: bold;
 }
+
 
 /* STEPS */
 
