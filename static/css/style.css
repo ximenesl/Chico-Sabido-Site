@@ -41,8 +41,7 @@
 }
 
 body{
-    background-image: url('/static/imgs/IMG_6457.PNG');
-    background-size: 300px 300px;
+    background-color:#252122;
     background-attachment: cover;
     color: #fff;
 }
@@ -74,7 +73,7 @@ main{
     height: 60px;
     width: 100%;
     z-index: 999;
-    background-image: url('/static/imgs/IMG_6455.PNG');
+    background-color: #496B1D;
 }
 
 .nav{
@@ -116,7 +115,7 @@ main{
         top: 0;
         right: -100%;
         bottom: 0;
-        background-image: url('/static/imgs/IMG_6458.PNG');
+        background-color: #496B1D;
         padding-bottom: 4rem;
         transition: .5s;
         border-left: 1px solid black;
@@ -190,7 +189,7 @@ main{
 /* BACKGROUND HEADER */
 
 .background-header{
-    background-image: url('/static/imgs/IMG_6455.PNG');
+    background-color: #496B1D;
 }
 
 
@@ -293,11 +292,11 @@ main{
     border: 0;
     border-radius: 100px;
     cursor: pointer;
-    background-color: #D33245;
+    background-color: #217623;
     transition: .3s;
 }
 .btn-saiba-mais a:hover{
-    background-image: url('/static/imgs/IMG_6459.PNG')
+    background-color: #496B1D;
 }
 
 
@@ -376,6 +375,16 @@ margin-bottom: 40px;
     margin-bottom: 15px;
 }
 
+/* EVENTS */
+.events-area {
+    padding: 40px 0;
+  }
+  
+  .events-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
 
 /* STEPS */
 
@@ -386,7 +395,7 @@ margin-bottom: 40px;
 }
 
 .step {
-    background-image: url('/static/imgs/IMG_6458.PNG');
+    background-color:#217623;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -409,7 +418,7 @@ margin-bottom: 40px;
 }
 
 .step:hover{
-    background-image: url('/static/imgs/IMG_6455.PNG');
+    background-color: #496B1D;
 }
 
 
@@ -468,7 +477,7 @@ margin-bottom: 40px;
 }
 
 .swiper-button-next,.swiper-button-prev {
-    color: #D33245 !important;
+    color: #217623 !important;
 }
 
 #fotos-chico-vision{
@@ -482,7 +491,7 @@ margin-bottom: 40px;
     border: 0;
     border-radius: 100px;
     cursor: pointer;
-    background-color: #D33245;
+    background-color: #496B1D;
     transition: .3s;
 }
 #all-images:hover{
@@ -576,7 +585,7 @@ margin-bottom: 40px;
 .worker-item .worker-social i{
     font-size: 2rem;
     cursor: pointer;
-    color: #D33245;
+    color: #217623;
 }
 .worker-item h4{
     font-size: 1.4rem;
@@ -588,8 +597,8 @@ margin-bottom: 40px;
 }
 
 #filter{
-    background-color: #D33245;
-    border: 1px solid #FFFFFF;
+    background-color: #217623;
+    border: 1px solid #496B1D;
     color: #FFFFFF;
     cursor: pointer;
     width: 150px;
@@ -604,7 +613,7 @@ margin-bottom: 40px;
 }
 
 .slider{
-    background-color: #D33245;
+    background-color: #217623;
     width: 100%;
     height: 400px;
     margin-top: 1rem;
@@ -711,7 +720,7 @@ footer {
 }
   
 ::-webkit-scrollbar-thumb{
-    background: #E1A80D;
+    background: #496B1D;
     border-radius: .5rem;
 }
 
