@@ -1,23 +1,27 @@
-const getImages = async () => {
-    const response = await fetch(`https://visao.pythonanywhere.com/imagens/all`);
-    
-    const data = await response.json();
-    console.log(data)
-    return data;
+const getImages = async (url) => {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error(`Erro ao buscar imagens da rota ${url}:`, error);
+        return [];
+    }
 };
 
-const renderImages = async () => {
-    const area = document.querySelector('.images-area');
-    const images = await getImages();
-
+const renderImages = async (containerId, url) => {
+    const area = document.getElementById(containerId);
     if (!area) {
-        console.error("Elemento .images-area não encontrado!");
+        console.error(`Elemento #${containerId} não encontrado!`);
         return;
     }
 
-    area.innerHTML = images.map(image => 
-        `<img src="${image.url}" id="fotos-chico-vision" alt="Foto de exemplo do Chico">`
-    ).join(""); 
+    const images = await getImages(url);
+    area.innerHTML = images.map(image =>
+        `<img src="${image.url}" id="fotos-chico-vision" alt="Foto de ${containerId}">`
+    ).join("");
 };
 
-renderImages();
+renderImages("recnplay", "https://visao.pythonanywhere.com/latest_image");
+renderImages("startupday", "https://visao.pythonanywhere.com/imagens/all");
+renderImages("transforma", "https://visao.pythonanywhere.com/imagenstransforma/all");

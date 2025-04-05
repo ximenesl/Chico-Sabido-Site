@@ -376,6 +376,12 @@ margin-bottom: 40px;
 }
 
 /* EVENTS */
+.events-links-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
 .events-area {
     padding: 40px 0;
   }
